@@ -40,4 +40,96 @@ Replicas:
 Replicas are the copies of your index’s shards.
 
 
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+
+API Conventions
+
+
+Multiple Indices:
+•	Comma separated notations (demo1, demo2, demo3)
+•	Wildcard notations (“*” matches with one or more characters in text; “+” is the same as the previous character; “_all keyword” for all indices)
+•	Elasticsearch lets you search indices according to date and time:
+    <static_name{date_math_expr{date_format | time_zone}}>
+
+
+
+Elasticsearch API’s:
+•	Document API’s: To perform operations on the documents
+•	Search API’s: Perform search
+•	Aggregation
+•	Index API’s: To perform operations on the index level
+•	Cluster API’s
+
+
+Single Document API:
+•	Index API
+•	Get API
+•	Update API
+•	Delete API
+
+
+Multi-document API:
+•	Multi Get API
+•	Bulk API
+•	Delete by query API
+•	Update by query API
+•	Re-index API
+
+
+PUT Example:
+
+    PUT /my_playlist/song/6
+    {
+        “title”: “1000 years”,
+        “artist”: “Christi Perri”,
+    }
+
+The above code Will update index “my_playlist”, type “song”, id “6” record, and put the title and artist into the document’s “source”. 
+
+
+Aggregation:
+	It collects all the data, which is collected by a search query.
+	
+Search API Example:
+
+The following will get all records matching “firstname” of “Rowena”:
+
+	GET _search
+	{
+	   “query”: {
+	      “match”: {
+		    “firstname”: “Rowena”
+	}}}
+
+
+The following will get all records with “balance” of greater or equal to 44,999, and less or equal to 9,000,000:
+
+	GET _search
+	{
+	   “query”: {
+	      “range”: {
+		    “balance”: {
+                “gte”: 44999,
+                “lte”: 9000000,
+	}}}}
+
+
+Cluster API:
+It is used to get information about cluster and its nodes, and make changes in them, such as:
+•	Cluster health
+•	Cluster State
+•	Cluster stats
+•	Pending cluster task
+•	Cluster route
+•	Node stats
+•	Node hot_threads
+
+
+
+
+
+
+
 
