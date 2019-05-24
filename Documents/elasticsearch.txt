@@ -40,4 +40,34 @@ Replicas:
 Replicas are the copies of your index’s shards.
 
 
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
++ + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+
+API Conventions
+
+
+Multiple Indices:
+•	Comma separated notations (demo1, demo2, demo3)
+•	Wildcard notations (“*” matches with one or more characters in text; “+” is the same as the previous character; “_all keyword” for all indices)
+•	Elasticsearch lets you search indices according to date and time:
+    <static_name{date_math_expr{date_format | time_zone}}>
+
+
+
+Elasticsearch API’s:
+•	Document API’s: To perform operations on the documents
+•	Search API’s: Perform search
+•	Aggregation
+•	Index API’s: To perform operations on the index level
+•	Cluster API’s
+
+
+
+
+
+
+
+
+
 
