@@ -1,0 +1,6 @@
+Logstash Tutorial: How to Get Started
+Source: https://logz.io/blog/logstash-tutorial/
+
+Logstash is the most popular log analysis platform and is responsible for aggregating data from different sources, processing it, and sending it down the pipeline, usually to be directly indexed in Elasticsearch
+
+The role Logstash plays in the stack is critical — it allows users to filter, massage, and shape the data so that it’s easier to work with.
