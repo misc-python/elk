@@ -1,0 +1,43 @@
+Elasticsearch Basics
+Source: https://www.youtube.com/watch?v=1EnvkPf7t6Y 
+
+•	Near real-time distributed and analytics engine
+•	Requests are fulfilled with RESTful API
+•	Open source developed in Java
+•	All based on text documents (i.e. JSON), instead of SCHEMAS
+•	Analysis: It provides aggregations which helps you to zoom out to explore trends and patterns in your data
+
+
+Cluster: 
+A cluster is a collection of nodes that hold the entire data. It provides centralized indexing and search capabilities across all nodes and is identified by a unique name (by default it is “elasticsearch”).
+
+
+Node:
+A node is a single server which is a part of a cluster, stores data and participates in the cluster’s indexing and search capabilities. 
+
+
+Index:
+An index is a collection of documents with similar characteristics and is identified by a name. The name is used to refer to the index while performing indexing, search, update, and delete operations.
+
+
+Type:
+
+A type is a logical category of in index. It is defined for documents that have a set of common fields. You can define more than one type in your index. 
+
+
+Document:
+
+A document is a basic unit of information which can be indexed. It is expressed in JSON.
+
+
+Shards:
+
+Elasticsearch provides the ability to subdivide the index into multiple pieces called shards. Each shard is itself a fully-functional and independent “index”.
+
+
+Replicas:
+
+Replicas are the copies of your index’s shards.
+
+
+
