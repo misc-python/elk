@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 django-elasticsearch-dsl = "*"
+django = "*"
+python-logstash = "*"
 
 [requires]
 python_version = "3.7"
