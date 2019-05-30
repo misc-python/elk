@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'elk_app',
+    'django_elasticsearch_dsl',
 ]
 
 ELASTICSEARCH_DSL = {
